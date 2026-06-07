@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Phone } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export function Contact() {
@@ -36,6 +36,19 @@ export function Contact() {
                   {/* Replace with actual email */}
                   <a href="mailto:salinitiwari12345@gmail.com" className="text-primary text-sm hover:underline mt-2 inline-block">
                     Send a message
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-primary/10 text-primary rounded-lg">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground">Phone</h3>
+                  <p className="text-muted-foreground mt-1">+91 6306726450</p>
+                  <a href="tel:+916306726450" className="text-primary text-sm hover:underline mt-2 inline-block">
+                    Call me
                   </a>
                 </div>
               </div>

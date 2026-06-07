@@ -18,7 +18,7 @@ const PROJECTS = [
     title: "KMD Real Estate Platform",
     description: "A modern and responsive real estate website for showcasing residential, commercial, and land investment opportunities. Implemented dynamic property listings, project showcase pages, inquiry forms, and SEO-friendly content.",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800&h=500",
-    techStack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
+    techStack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Redux Saga"],
     github: null,
     live: "https://kmdrealestatevrindavan.com/",
   },
