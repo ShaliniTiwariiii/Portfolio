@@ -73,7 +73,7 @@ export function About() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Languages</h3>
-                  <p className="text-sm text-muted-foreground mt-1">TypeScript, Java</p>
+                  <p className="text-sm text-muted-foreground mt-1">JavaScript, Java</p>
                 </div>
               </div>
             </div>
