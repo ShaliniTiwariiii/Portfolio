@@ -56,12 +56,14 @@ export function Skills() {
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill) => (
-                    <span
+                    <motion.span
                       key={skill}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
                       className="px-4 py-2 rounded-full text-sm font-medium bg-muted text-muted-foreground border border-border/50 hover:border-primary/50 hover:text-primary transition-colors cursor-default"
                     >
                       {skill}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </motion.div>

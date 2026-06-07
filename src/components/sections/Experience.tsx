@@ -8,10 +8,16 @@ export function Experience() {
     <section id="experience" className="py-20 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4 md:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.2 }
+            }
+          }}
           className="max-w-4xl mx-auto"
         >
           <div className="text-center mb-16">
@@ -25,7 +31,10 @@ export function Experience() {
 
           <div className="space-y-12">
             {/* Experience */}
-            <div className="relative pl-8 md:pl-0">
+            <motion.div variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }} className="relative pl-8 md:pl-0">
               <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-border"></div>
               
               <div className="relative mb-12 md:flex items-center justify-between">
@@ -46,10 +55,13 @@ export function Experience() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Education */}
-            <div className="relative pl-8 md:pl-0 mt-20">
+            <motion.div variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }} className="relative pl-8 md:pl-0 mt-20">
               <div className="relative mb-12 md:flex items-center justify-between">
                 <div className="md:w-[45%] bg-background p-6 rounded-xl border border-border shadow-sm order-3 md:order-1 text-left md:text-right">
                   <p className="text-muted-foreground text-sm leading-relaxed">
@@ -67,10 +79,13 @@ export function Experience() {
                   <p className="text-sm text-muted-foreground mt-2">2021</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Certification */}
-            <div className="relative pl-8 md:pl-0">
+            <motion.div variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }} className="relative pl-8 md:pl-0">
               <div className="relative md:flex items-center justify-between">
                 <div className="md:w-[45%] md:text-right mb-4 md:mb-0 order-1 md:order-1">
                   <h3 className="text-xl font-bold text-foreground">Software Development & Problem Solving</h3>
@@ -88,7 +103,7 @@ export function Experience() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
