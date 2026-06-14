@@ -71,7 +71,7 @@ export function Projects() {
                 className="group flex flex-col bg-background rounded-xl overflow-hidden border border-border shadow-sm hover:shadow-lg transition-all"
               >
                 <div className="relative h-60 overflow-hidden bg-muted">
-                  {/* Using standard img to avoid Next.js Image optimization configuration issues for unsplash during creation */}
+                 
                   <img
                     src={project.image}
                     alt={project.title}
